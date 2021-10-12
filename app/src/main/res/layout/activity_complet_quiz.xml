@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg2"
+    android:layout_height="match_parent"
+    tools:context=".complet_quiz">
+
+    <LinearLayout
+        android:id="@+id/linearview"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/complete_image_quiz"
+            android:layout_width="230dp"
+            android:layout_height="330dp"
+            android:src="@drawable/a1_image1" />
+
+
+
+    <LinearLayout
+
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/complete_quiz_txt1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/choose_quiz_item1"
+            android:gravity="center"
+            android:text=""
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="#fff" />
+
+        <EditText
+            android:id="@+id/complete_quiz_txt2"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/choose_quiz_item1"
+            android:gravity="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="#fff" />
+
+        <EditText
+            android:id="@+id/complete_quiz_txt3"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/choose_quiz_item1"
+            android:gravity="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="#fff" />
+
+        <EditText
+            android:id="@+id/complete_quiz_txt4"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/choose_quiz_item1"
+            android:gravity="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="#fff" />
+
+        <EditText
+            android:id="@+id/complete_quiz_txt5"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/choose_quiz_item1"
+            android:gravity="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="#fff" />
+
+        <EditText
+            android:id="@+id/complete_quiz_txt6"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/choose_quiz_item1"
+            android:gravity="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="#fff" />
+
+        <EditText
+            android:id="@+id/complete_quiz_txt7"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/choose_quiz_item1"
+            android:gravity="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="#fff" />
+
+        <EditText
+            android:id="@+id/complete_quiz_txt8"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/choose_quiz_item1"
+            android:gravity="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="#fff" />
+
+        <EditText
+            android:id="@+id/complete_quiz_txt9"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/choose_quiz_item1"
+            android:gravity="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="#fff" />
+
+        <EditText
+            android:id="@+id/complete_quiz_txt10"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/choose_quiz_item1"
+            android:gravity="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="#fff" />
+    </LinearLayout>
+        <Button
+            android:layout_width="80dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="25dp"
+            android:id="@+id/complete_quiz_next"
+            android:layout_height="80dp"
+            android:background="@drawable/nextquiz"
+            android:onClick="res_onclick"
+            ></Button>
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/complete_quiz_res"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="intnt_onclick"
+        android:src="@drawable/corct"
+        android:visibility="invisible" />
+</RelativeLayout>

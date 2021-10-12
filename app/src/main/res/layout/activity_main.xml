@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_marginLeft="20dp"
+            android:id="@+id/base"
+            android:layout_gravity="center"
+            android:layout_width="160dp"
+            android:layout_height="200dp"
+            android:background="@drawable/myshape">
+
+            <TextView
+                android:id="@+id/alpha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="أ"
+                android:textColor="#C62512"
+                android:textSize="100dp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+
+        <LinearLayout
+            android:id="@+id/photos"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="أرنب"
+                android:textSize="32dp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:background="@drawable/shape2"
+                android:onClick="playImage1"
+                android:src="@drawable/a1_image1" />
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/shape2"
+                android:onClick="playImage2"
+                android:src="@drawable/a1_image2" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="أسد"
+                android:textSize="32dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="175dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="75dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/previous"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/back"
+            android:onClick="previus" />
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/play"
+            android:onClick="play" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/next"
+            android:onClick="next" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/sky</color>
+    <color name="colorPrimaryDark">@color/sky</color>
+    86D5FE
+    <color name="colorAccent">#AFD455</color>
+    <color name="light">#0F03A9F4</color>
+
+    <color name="red">#d80707</color>
+
+    <color name="sky">#86D5FE</color>
+    <color name="sky2">#BAEDF4</color>
+    <color name="black_overlay">#66000000</color>
+
+
+
+    <color name="blue">#0066FF</color>
+    <color name="green">#13AF18</color>
+    <color name="yellow">#FCE202</color>
+    <color name="orange">#FF5722</color>
+    <color name="purple">#673AB7</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="brown">#301900</color>
+</resources>

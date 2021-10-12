@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context=".sound_image_quiz">
+
+    <LinearLayout
+        android:id="@+id/linearview"
+        android:layout_centerInParent="true"
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/sound_image_quiz_imag"
+            android:layout_width="230dp"
+            android:layout_height="330dp"
+            android:onClick="sound_play"
+            android:src="@drawable/a19_image2" />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/sound_image_quiz_txt"
+            android:background="@drawable/choose_quiz_item2"
+            android:singleLine="true"
+            android:maxLength="10"
+            android:textColor="#FF5997"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/sound_image_quiz_next"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="right"
+            android:onClick="nextPress"
+            android:src="@drawable/nextquiz" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/sound_quiz_imag_res"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="intnt_onclick"
+        android:src="@drawable/corct"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/gradeView"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your grade is:"
+            android:textSize="42dp"/>
+        <TextView
+            android:id="@+id/grade"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="0"
+            android:textSize="42dp"/>
+        <TextView
+            android:id="@+id/gradetxt"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Excelent"
+            android:textSize="42dp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
